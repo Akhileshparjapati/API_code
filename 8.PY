@@ -14,6 +14,7 @@ class response_user(BaseModel):
 
 @app.get("/users",response_model=response_user)
 
+
 def get_user():
     return{
         "name":"sachin",
