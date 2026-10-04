@@ -27,7 +27,7 @@ def todo_list(todo_id:int):
     for todo in todos:
         if todo.id==todo_id:
             return todo
-    return {"error"}
+    return {"error":"todo not found"}
 
 
 @app.put("/todos/{todo_id}")
