@@ -6,7 +6,6 @@ user=[]
 class users(BaseModel):
     name:str
     age:int
-
 @app.post("/users")
 def user_det(users:users):
     user.append(users)
